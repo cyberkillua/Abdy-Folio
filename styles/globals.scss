@@ -1,8 +1,10 @@
+@import "mixins";
+
 :root {
-  --primary-color: #ffffff;
-  --primary-text-color: #434960;
-  --secondary-text-color: #aeaeae;
-  --green-color: #edffa6;
+  --primary-color: #ffffff; // background color
+  --primary-text-color: #434960; // main text color
+  --secondary-text-color: #aeaeae; // secondary text color
+  --green-color: #edffa6; // green color
 }
 
 *,
@@ -12,16 +14,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: var(--primary-color);
-}
-@media (max-width: 49em) {
-  body {
+  // background-image: url("../public/BackgroundWeb.svg");
+
+  @include small-screen {
+    // background-image: url("../public/mobile-background.svg");
     background-size: cover;
   }
 }
-
 body {
   color: var(--primary-text-color);
   line-height: 1.5;
@@ -37,14 +38,11 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-}
-@media (max-width: 64em) {
-  html {
+
+  @include medium-screen {
     font-size: 50%;
   }
-}
-@media (max-width: 49em) {
-  html {
+  @include small-screen {
     font-size: 40%;
   }
-}/*# sourceMappingURL=globals.css.map */
+}

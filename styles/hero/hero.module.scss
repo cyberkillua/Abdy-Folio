@@ -1,0 +1,33 @@
+@import "../mixins";
+.hero {
+  margin-top: 5rem;
+  padding: 2rem 10rem 2rem 6rem;
+  display: flex;
+
+  @include small-screen {
+    flex-direction: column;
+  }
+  .text {
+    width: 40%;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 2;
+    @include small-screen {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  .img {
+    @include small-screen {
+      position: relative;
+    }
+  }
+  .pic {
+    max-height: 50rem;
+    max-width: 50rem;
+    @include small-screen {
+      position: absolute;
+      right: -10rem;
+    }
+  }
+}
