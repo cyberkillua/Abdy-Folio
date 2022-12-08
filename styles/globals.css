@@ -16,11 +16,6 @@
 body {
   background-color: var(--primary-color);
 }
-@media (max-width: 49em) {
-  body {
-    background-size: cover;
-  }
-}
 
 body {
   color: var(--primary-text-color);

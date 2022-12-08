@@ -16,12 +16,6 @@
 }
 body {
   background-color: var(--primary-color);
-  // background-image: url("../public/BackgroundWeb.svg");
-
-  @include small-screen {
-    // background-image: url("../public/mobile-background.svg");
-    background-size: cover;
-  }
 }
 body {
   color: var(--primary-text-color);

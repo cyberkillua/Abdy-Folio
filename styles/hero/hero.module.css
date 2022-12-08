@@ -5,6 +5,8 @@
 }
 @media (max-width: 49em) {
   .hero {
+    margin-top: 0rem;
+    padding: 1rem 3rem;
     flex-direction: column;
   }
 }
@@ -33,7 +35,5 @@
   .hero .pic {
     position: absolute;
     right: -10rem;
-    max-height: 40rem;
-    max-width: 40rem;
   }
 }/*# sourceMappingURL=hero.module.css.map */
