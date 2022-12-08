@@ -28,14 +28,17 @@
   }
 }
 .hero .pic {
-  max-height: 50rem;
-  max-width: 50rem;
+  width: 50rem;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 @media (max-width: 49em) {
   .hero .pic {
-    position: absolute;
-    right: -5rem;
-    max-height: 40rem;
-    max-width: 35rem;
+    float: right;
+    width: 40rem;
+    height: 40rem;
   }
 }/*# sourceMappingURL=hero.module.css.map */

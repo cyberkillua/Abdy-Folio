@@ -21,17 +21,19 @@
   }
   .img {
     @include small-screen {
+      //   height: 100rem;
       position: relative;
     }
   }
   .pic {
-    max-height: 50rem;
-    max-width: 50rem;
+    width: 50rem;
+    height: 50rem;
+    object-fit: cover;
+    object-position: bottom;
     @include small-screen {
-      position: absolute;
-      right: -5rem;
-      max-height: 40rem;
-      max-width: 35rem;
+      float: right;
+      width: 40rem;
+      height: 40rem;
     }
   }
 }
