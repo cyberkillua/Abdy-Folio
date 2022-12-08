@@ -29,9 +29,9 @@
     max-width: 50rem;
     @include small-screen {
       position: absolute;
-      right: -10rem;
-      //   max-height: 27rem;
-      //   max-width: 25rem;
+      right: -5rem;
+      max-height: 40rem;
+      max-width: 35rem;
     }
   }
 }
