@@ -42,8 +42,8 @@
 @media (max-width: 49em) {
   .hero .pic {
     float: right;
-    width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 30rem;
     align-self: flex-start;
   }
 }/*# sourceMappingURL=hero.module.css.map */
