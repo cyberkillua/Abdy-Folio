@@ -8,7 +8,7 @@
 }
 @media (max-width: 49em) {
   .nav {
-    padding: 7rem 3rem;
+    padding: 5rem 3.5rem;
   }
 }
 .nav .navLinks {
@@ -35,7 +35,7 @@
 @media (max-width: 49em) {
   .nav .toggler {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 }/*# sourceMappingURL=navbar.module.css.map */

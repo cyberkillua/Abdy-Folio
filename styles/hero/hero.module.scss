@@ -6,7 +6,7 @@
 
   @include small-screen {
     margin-top: 0rem;
-    padding: 1rem 3rem;
+    padding: 1rem 3.5rem;
     flex-direction: column;
   }
   .text {
@@ -23,9 +23,8 @@
     @include small-screen {
       //   height: 100rem;
       position: relative;
-      border: 2px red solid;
       width: 100%;
-      height: 60rem;
+      height: 40rem;
       align-self: flex-start;
     }
   }
