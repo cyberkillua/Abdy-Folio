@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import styles from "../styles/Home.module.css";
+import MovingSection from "../Components/MovingSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
+      <MovingSection />
     </div>
   );
 }

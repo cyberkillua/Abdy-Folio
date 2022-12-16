@@ -23,10 +23,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   height: 70vh;
 }
 .container .links a {
   text-decoration: none;
   color: var(--primary-text-color);
+  margin-top: 6rem;
 }/*# sourceMappingURL=Burger.module.css.map */
