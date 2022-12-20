@@ -34,6 +34,9 @@
 
 .text {
   flex-shrink: 0;
-  padding: 0 30px;
+  padding: 0;
   font-smooth: always;
+}
+.text img {
+  margin: 0 30px;
 }/*# sourceMappingURL=MovingSection.module.css.map */

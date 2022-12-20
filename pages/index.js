@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import styles from "../styles/Home.module.css";
 import MovingSection from "../Components/MovingSection";
+import { Project } from "../Components/Project";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <MovingSection />
+      <Project />
     </div>
   );
 }

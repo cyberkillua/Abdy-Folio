@@ -2,8 +2,11 @@ import React from "react";
 import styles from "../styles/movingSection/MovingSection.module.css";
 import { gsap } from "gsap";
 import { useEffect } from "react";
+import star from "../public/Star.svg";
+import Image from "next/image";
+
 const MovingSection = () => {
-  const jobs2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const jobs2 = [1, 2, 3, 4, 5];
   const tl = gsap.timeline();
 
   useEffect(() => {
@@ -33,7 +36,12 @@ const MovingSection = () => {
             {jobs2.map((job) => {
               return (
                 <div className={styles.text} id="text-one" key={job}>
-                  Product Management + Product Design + Creative Design +
+                  Product Management
+                  <Image src={star} alt="star" />
+                  Product Design
+                  <Image src={star} alt="star" />
+                  Creative Design
+                  <Image src={star} alt="star" />
                 </div>
               );
             })}
