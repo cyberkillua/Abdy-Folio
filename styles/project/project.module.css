@@ -1,0 +1,52 @@
+.container {
+  margin: 5rem 0;
+  width: 100%;
+}
+
+.contain {
+  color: #eee;
+  font-weight: 600;
+  font-size: 12rem;
+  padding-top: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.textTwo {
+  flex-shrink: 0;
+  padding: 0 35px;
+  font-smooth: always;
+  color: #edffa6;
+  font-weight: 300;
+}
+@media (max-width: 49em) {
+  .textTwo {
+    height: 50rem;
+    margin: 0 10px;
+  }
+}
+
+.textCon {
+  -webkit-font-smoothing: antialiased;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+}
+
+.text {
+  flex-shrink: 0;
+  padding: 0;
+  font-smooth: always;
+}
+.text img {
+  margin: 0 30px;
+}
+@media (max-width: 49em) {
+  .text img {
+    height: 50rem;
+    margin: 0 10px;
+  }
+}/*# sourceMappingURL=project.module.css.map */
