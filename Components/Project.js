@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Project/Project.module.css";
+import styles from "../styles/project/project.module.css";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 import cykea from "../public/Cykea.svg";
