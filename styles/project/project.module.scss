@@ -24,7 +24,7 @@
   color: #edffa6;
   font-weight: 300;
   @include small-screen {
-    height: 50rem;
+    // height: 50rem;
     margin: 0 10px;
   }
 }
@@ -41,6 +41,7 @@
   flex-shrink: 0;
   padding: 0;
   font-smooth: always;
+ 
   img {
     margin: 0 30px;
     @include small-screen {

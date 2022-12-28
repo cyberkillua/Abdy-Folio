@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       {open && <Burger setOpen={setOpen} />}
-      <nav className={styles.nav}>
+      <nav className={styles.nav} id="top">
         <div>
           <Link href="#home">
             <Image src={Logo} alt="AbdyMovic Logo" />

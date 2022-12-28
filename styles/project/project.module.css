@@ -21,7 +21,6 @@
 }
 @media (max-width: 49em) {
   .textTwo {
-    height: 50rem;
     margin: 0 10px;
   }
 }

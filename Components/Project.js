@@ -13,14 +13,14 @@ import aidoo from "../public/AIDOO.svg";
 import Image from "next/image";
 
 export const Project = () => {
-  const jobs2 = [1, 2, 3, 4, 5];
+  const jobs2 = [1, 2, 3, 4, 5, 6];
   const tl = gsap.timeline();
 
   useEffect(() => {
     tl.to("#text-one", {
-      xPercent: -100,
+      xPercent: -200,
       repeat: -1,
-      duration: 9,
+      duration: 10,
       ease: "linear",
     })
       .to("#text-two", {
