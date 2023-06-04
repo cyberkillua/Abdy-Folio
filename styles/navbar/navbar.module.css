@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100vw;
   font-size: 1.8rem;
@@ -10,4 +10,17 @@
   .nav {
     padding: 5rem 3.5rem;
   }
+}
+.nav .btn {
+  height: 6rem;
+  width: 18rem;
+  background: #ccfd53;
+  border: 3px solid #000000;
+  border-radius: 4rem;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 184%;
+  color: #000000;
 }/*# sourceMappingURL=navbar.module.css.map */
