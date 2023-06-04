@@ -27,7 +27,6 @@
 
 .textCon {
   -webkit-font-smoothing: antialiased;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;

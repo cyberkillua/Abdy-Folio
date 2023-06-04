@@ -10,34 +10,4 @@
   @include small-screen {
     padding: 5rem 3.5rem;
   }
-
-  .navLinks {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 1.8rem;
-    font-weight: 400;
-
-    a {
-      text-decoration: none;
-      color: var(--secondary-text-color);
-      padding-left: 6rem;
-      line-height: 22.97px;
-    }
-    a:hover {
-      // color: var(--green-color);
-    }
-
-    @include small-screen {
-      display: none;
-    }
-  }
-  .toggler {
-    display: none;
-    @include small-screen {
-      display: block;
-      width: 20px;
-      height: 20px;
-    }
-  }
 }

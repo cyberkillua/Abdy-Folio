@@ -10,32 +10,4 @@
   .nav {
     padding: 5rem 3.5rem;
   }
-}
-.nav .navLinks {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-.nav .navLinks a {
-  text-decoration: none;
-  color: var(--secondary-text-color);
-  padding-left: 6rem;
-  line-height: 22.97px;
-}
-@media (max-width: 49em) {
-  .nav .navLinks {
-    display: none;
-  }
-}
-.nav .toggler {
-  display: none;
-}
-@media (max-width: 49em) {
-  .nav .toggler {
-    display: block;
-    width: 20px;
-    height: 20px;
-  }
 }/*# sourceMappingURL=navbar.module.css.map */
