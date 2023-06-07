@@ -18,9 +18,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <MovingSection />
-      <Project />
-      <Footer />
+      {/* <MovingSection /> */}
+      {/* <Project /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,48 +1,70 @@
 .hero {
   margin-top: 5rem;
-  padding: 2rem 10rem 2rem 6rem;
-  display: flex;
+  padding: 2rem 0rem 2rem 6rem;
+  height: 200vh;
 }
 @media (max-width: 49em) {
   .hero {
     margin-top: 0rem;
-    padding: 1rem 3.5rem;
-    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
   }
 }
 .hero .text {
-  width: 40%;
+  width: 53rem;
+  height: 16rem;
   font-weight: 300;
-  font-size: 2.2rem;
-  line-height: 2;
+  font-size: 2.4rem;
+  line-height: 39px;
+  margin-bottom: 5rem;
+  padding: 0rem 3.5rem;
 }
 @media (max-width: 49em) {
   .hero .text {
+    font-size: 2.4rem;
     width: 100%;
-    margin-bottom: 2rem;
+    line-height: 25px;
+    margin-bottom: 20rem;
   }
+}
+.hero .imageContainer {
+  position: relative;
+  width: 100vw;
 }
 @media (max-width: 49em) {
-  .hero .img {
-    position: relative;
-    width: 100%;
-    height: 40rem;
-    align-self: flex-start;
+  .hero .imageContainer {
+    height: 100vh;
   }
 }
-.hero .pic {
-  width: 50rem;
-  height: 50rem;
+.hero .imageContainer .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hero .imageContainer .img .topCloud {
+  position: absolute;
+  top: -17%;
+  right: -30px;
+}
+@media (max-width: 49em) {
+  .hero .imageContainer .img .topCloud {
+    height: 15rem;
+    top: -25%;
+    right: -80px;
+  }
+}
+.hero .imageContainer .img .pic {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
 }
 @media (max-width: 49em) {
-  .hero .pic {
-    float: right;
-    width: 30rem;
-    height: 30rem;
-    align-self: flex-start;
+  .hero .imageContainer .img .pic {
+    position: absolute;
+    left: -10%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
   }
 }/*# sourceMappingURL=hero.module.css.map */
