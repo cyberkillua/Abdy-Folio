@@ -1,10 +1,10 @@
 @import "mixins";
 
 :root {
-  --primary-color: #F3FCFF; // background color
+  --primary-color: #f3fcff; // background color
   --primary-text-color: #000000; // main text color
   --secondary-text-color: #5447f6; // secondary text color
-  --green-color: #CCFD53; // green color
+  --green-color: #ccfd53; // green color
 }
 
 *,
@@ -32,6 +32,9 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   @include medium-screen {
     font-size: 50%;

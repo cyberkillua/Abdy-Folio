@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #F3FCFF;
+  --primary-color: #f3fcff;
   --primary-text-color: #000000;
   --secondary-text-color: #5447f6;
-  --green-color: #CCFD53;
+  --green-color: #ccfd53;
 }
 
 *,
@@ -32,6 +32,9 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 64em) {
   html {
