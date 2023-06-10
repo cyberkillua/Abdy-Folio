@@ -3,16 +3,17 @@
   margin-top: 5rem;
   padding: 2rem 0rem 2rem 6rem;
   height: 200vh;
-  overflow-x: hidden;
 }
 @media (max-width: 49em) {
   .hero {
     margin-top: 0rem;
     padding: 1rem 0rem 1rem 0rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 }
 .hero .text {
-  width: 53rem;
+  width: 60rem;
   height: 16rem;
   font-weight: 300;
   font-size: 2.4rem;
@@ -39,36 +40,85 @@
 .hero .imageContainer .img {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
 .hero .imageContainer .img .topCloud {
   position: absolute;
   top: 10%;
   right: 0px;
   transform: translateY(-50%);
-  z-index: 1;
-  overflow-x: hidden;
 }
 @media (max-width: 49em) {
   .hero .imageContainer .img .topCloud {
     height: 15rem;
-    top: 15%;
+    top: 170px;
     right: -60px;
   }
 }
+.hero .imageContainer .img .bottomCloud {
+  position: absolute;
+  top: 40%;
+  left: 22%;
+  transform: translateY(-50%);
+}
+@media (max-width: 49em) {
+  .hero .imageContainer .img .bottomCloud {
+    height: 15rem;
+    top: 450px;
+    left: -90px;
+  }
+}
 .hero .imageContainer .img .pic {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 85%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 49em) {
   .hero .imageContainer .img .pic {
+    width: 100%;
+    height: 80%;
     position: absolute;
-    left: -30%;
+    left: -100px;
     -o-object-fit: contain;
        object-fit: contain;
     -o-object-position: top;
        object-position: top;
   }
+}
+.hero .imageContainer .info {
+  position: absolute;
+  top: 38%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-family: "Mouse Memoirs";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15rem;
+  line-height: 104%;
+  color: #5447f6;
+  cursor: pointer;
+  width: 35%;
+}
+@media (max-width: 49em) {
+  .hero .imageContainer .info {
+    font-size: 9rem;
+    line-height: 104%;
+    width: 60%;
+    top: 320px;
+    right: -10px;
+  }
+}
+.hero .imageContainer .info .oneInfo {
+  display: flex;
+  align-items: center;
+}
+.hero .imageContainer .info .oneInfo .fire {
+  margin-left: 2rem;
+  display: none;
+}
+.hero .imageContainer .info .oneInfo:hover .fire {
+  display: block;
+}
+.hero .imageContainer .info .oneInfo:target .fire {
+  display: block;
 }/*# sourceMappingURL=hero.module.css.map */

@@ -4,22 +4,21 @@
   margin-top: 5rem;
   padding: 2rem 0rem 2rem 6rem;
   height: 200vh;
-  overflow-x: hidden;
 
   @include small-screen {
     margin-top: 0rem;
     padding: 1rem 0rem 1rem 0rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   .text {
-    // position: relative;
-    width: 53rem;
+    width: 60rem;
     height: 16rem;
     font-weight: 300;
     font-size: 2.4rem;
     line-height: 39px;
     margin-bottom: 5rem;
     padding: 0rem 3.5rem;
-    // z-index: -1;
 
     @include small-screen {
       font-size: 2.4rem;
@@ -30,21 +29,16 @@
   }
 
   .imageContainer {
-    // position: relative;
-    // height: 100vh;
     width: 100vw;
     // background-color: yellow;
-    // overflow-x: hidden;
-    // overflow-x: visible;
+
     @include small-screen {
       height: 100vh;
     }
 
     .img {
-      // position: relative;
       width: 100%;
       height: 100%;
-      overflow-x: hidden;
 
       @include small-screen {
       }
@@ -54,26 +48,77 @@
         top: 10%;
         right: 0px;
         transform: translateY(-50%);
-        z-index: 1;
-        overflow-x: hidden;
 
         @include small-screen {
           height: 15rem;
-          top: 15%;
+          top: 170px;
           right: -60px;
         }
       }
-      .pic {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+
+      .bottomCloud {
+        position: absolute;
+        top: 40%;
+        left: 22%;
+        transform: translateY(-50%);
 
         @include small-screen {
+          height: 15rem;
+          top: 450px;
+          left: -90px;
+        }
+      }
+      .pic {
+        width: 85%;
+        height: 80%;
+        object-fit: contain;
+
+        @include small-screen {
+          width: 100%;
+          height: 80%;
           position: absolute;
-          left: -30%;
+          left: -100px;
           object-fit: contain;
           object-position: top;
         }
+      }
+    }
+    .info {
+      position: absolute;
+      top: 38%;
+      right: 15px;
+      transform: translateY(-50%);
+      font-family: "Mouse Memoirs";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15rem;
+      line-height: 104%;
+      color: #5447f6;
+      cursor: pointer;
+      width: 35%;
+
+      @include small-screen {
+        font-size: 9rem;
+        line-height: 104%;
+        width: 60%;
+        top: 320px;
+        right: -10px;
+      }
+
+      .oneInfo {
+        display: flex;
+        align-items: center;
+
+        .fire {
+          margin-left: 2rem;
+          display: none;
+        }
+      }
+      .oneInfo:hover .fire {
+        display: block;
+      }
+      .oneInfo:target .fire {
+        display: block;
       }
     }
   }
