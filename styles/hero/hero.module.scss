@@ -1,4 +1,5 @@
 @import "../mixins";
+
 .hero {
   position: relative;
   margin-top: 5rem;
@@ -7,10 +8,11 @@
 
   @include small-screen {
     margin-top: 0rem;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0rem;
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
+
   .text {
     width: 60rem;
     height: 16rem;
@@ -34,6 +36,7 @@
 
     @include small-screen {
       height: 100vh;
+      background-color: yellow;
     }
 
     .img {
@@ -41,18 +44,20 @@
       height: 100%;
 
       @include small-screen {
+        position: relative;
+        height: auto;
       }
 
       .topCloud {
         position: absolute;
         top: 10%;
-        right: 0px;
+        right: 0;
         transform: translateY(-50%);
 
         @include small-screen {
-          height: 15rem;
-          top: 170px;
-          right: -60px;
+          height: 10rem;
+          top: -70px;
+          right: -75px;
         }
       }
 
@@ -64,61 +69,67 @@
 
         @include small-screen {
           height: 15rem;
-          top: 450px;
+          top: 65%;
           left: -90px;
         }
       }
-      .pic {
-        width: 85%;
-        height: 80%;
-        object-fit: contain;
 
-        @include small-screen {
-          width: 100%;
+      .picInfo {
+        position: relative;
+        // background-color: aqua;
+
+        .pic {
+          width: 85%;
           height: 80%;
-          position: absolute;
-          left: -100px;
           object-fit: contain;
-          object-position: top;
+
+          @include small-screen {
+            width: 100%;
+            height: auto;
+            position: relative;
+            left: -50px;
+            object-fit: contain;
+            object-position: top;
+          }
         }
-      }
-    }
-    .info {
-      position: absolute;
-      top: 38%;
-      right: 15px;
-      transform: translateY(-50%);
-      font-family: "Mouse Memoirs";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 15rem;
-      line-height: 104%;
-      color: #5447f6;
-      cursor: pointer;
-      width: 35%;
+        .info {
+          position: absolute;
+          top: 3%;
+          right: 6%;
 
-      @include small-screen {
-        font-size: 9rem;
-        line-height: 104%;
-        width: 60%;
-        top: 320px;
-        right: -10px;
-      }
+          font-family: "Mouse Memoirs";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15rem;
+          line-height: 104%;
+          color: #5447f6;
+          cursor: pointer;
+          width: 35%;
 
-      .oneInfo {
-        display: flex;
-        align-items: center;
+          @include small-screen {
+            font-size: 8rem;
+            line-height: 104%;
+            width: 60%;
+            top: 0%;
+            right: -20%;
+          }
 
-        .fire {
-          margin-left: 2rem;
-          display: none;
+          .oneInfo {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+
+            .fire {
+              margin-left: 2rem;
+              display: none;
+            }
+          }
+
+          .oneInfo:hover .fire,
+          .oneInfo:target .fire {
+            display: block;
+          }
         }
-      }
-      .oneInfo:hover .fire {
-        display: block;
-      }
-      .oneInfo:target .fire {
-        display: block;
       }
     }
   }

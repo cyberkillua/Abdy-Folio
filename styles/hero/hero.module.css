@@ -7,7 +7,7 @@
 @media (max-width: 49em) {
   .hero {
     margin-top: 0rem;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0rem;
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
@@ -35,23 +35,30 @@
 @media (max-width: 49em) {
   .hero .imageContainer {
     height: 100vh;
+    background-color: yellow;
   }
 }
 .hero .imageContainer .img {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 49em) {
+  .hero .imageContainer .img {
+    position: relative;
+    height: auto;
+  }
+}
 .hero .imageContainer .img .topCloud {
   position: absolute;
   top: 10%;
-  right: 0px;
+  right: 0;
   transform: translateY(-50%);
 }
 @media (max-width: 49em) {
   .hero .imageContainer .img .topCloud {
-    height: 15rem;
-    top: 170px;
-    right: -60px;
+    height: 10rem;
+    top: -70px;
+    right: -75px;
   }
 }
 .hero .imageContainer .img .bottomCloud {
@@ -63,33 +70,35 @@
 @media (max-width: 49em) {
   .hero .imageContainer .img .bottomCloud {
     height: 15rem;
-    top: 450px;
+    top: 65%;
     left: -90px;
   }
 }
-.hero .imageContainer .img .pic {
+.hero .imageContainer .img .picInfo {
+  position: relative;
+}
+.hero .imageContainer .img .picInfo .pic {
   width: 85%;
   height: 80%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 @media (max-width: 49em) {
-  .hero .imageContainer .img .pic {
+  .hero .imageContainer .img .picInfo .pic {
     width: 100%;
-    height: 80%;
-    position: absolute;
-    left: -100px;
+    height: auto;
+    position: relative;
+    left: -50px;
     -o-object-fit: contain;
        object-fit: contain;
     -o-object-position: top;
        object-position: top;
   }
 }
-.hero .imageContainer .info {
+.hero .imageContainer .img .picInfo .info {
   position: absolute;
-  top: 38%;
-  right: 15px;
-  transform: translateY(-50%);
+  top: 3%;
+  right: 6%;
   font-family: "Mouse Memoirs";
   font-style: normal;
   font-weight: 400;
@@ -100,25 +109,24 @@
   width: 35%;
 }
 @media (max-width: 49em) {
-  .hero .imageContainer .info {
-    font-size: 9rem;
+  .hero .imageContainer .img .picInfo .info {
+    font-size: 8rem;
     line-height: 104%;
     width: 60%;
-    top: 320px;
-    right: -10px;
+    top: 0%;
+    right: -20%;
   }
 }
-.hero .imageContainer .info .oneInfo {
+.hero .imageContainer .img .picInfo .info .oneInfo {
   display: flex;
   align-items: center;
+  margin: 2rem 0;
 }
-.hero .imageContainer .info .oneInfo .fire {
+.hero .imageContainer .img .picInfo .info .oneInfo .fire {
   margin-left: 2rem;
   display: none;
 }
-.hero .imageContainer .info .oneInfo:hover .fire {
-  display: block;
-}
-.hero .imageContainer .info .oneInfo:target .fire {
+.hero .imageContainer .img .picInfo .info .oneInfo:hover .fire,
+.hero .imageContainer .img .picInfo .info .oneInfo:target .fire {
   display: block;
 }/*# sourceMappingURL=hero.module.css.map */
