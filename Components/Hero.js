@@ -32,8 +32,8 @@ const Hero = () => {
                 <Image className={styles.fire} src={Fire} alt="Fire" />
               </div>
             </div>
+            <Image className={styles.bottomCloud} src={Cloud} alt="Cloud" />
           </div>
-          <Image className={styles.bottomCloud} src={Cloud} alt="Cloud" />
         </div>
       </div>
     </section>

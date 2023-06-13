@@ -19,7 +19,7 @@
     font-weight: 300;
     font-size: 2.4rem;
     line-height: 39px;
-    margin-bottom: 5rem;
+    margin-bottom: 15rem;
     padding: 0rem 3.5rem;
 
     @include small-screen {
@@ -32,16 +32,18 @@
 
   .imageContainer {
     width: 100vw;
+    height: 110rem;
     // background-color: yellow;
 
     @include small-screen {
       height: 100vh;
-      background-color: yellow;
+      // background-color: yellow;
     }
 
     .img {
       width: 100%;
       height: 100%;
+      // background-color: red;
 
       @include small-screen {
         position: relative;
@@ -51,7 +53,7 @@
       .topCloud {
         position: absolute;
         top: 10%;
-        right: 0;
+        right: -50px;
         transform: translateY(-50%);
 
         @include small-screen {
@@ -63,14 +65,14 @@
 
       .bottomCloud {
         position: absolute;
-        top: 40%;
-        left: 22%;
+        top: 30%;
+        left: 10%;
         transform: translateY(-50%);
 
         @include small-screen {
           height: 15rem;
           top: 65%;
-          left: -90px;
+          left: -13rem;
         }
       }
 
@@ -87,7 +89,7 @@
             width: 100%;
             height: auto;
             position: relative;
-            left: -50px;
+            left: -10rem;
             object-fit: contain;
             object-position: top;
           }
@@ -103,25 +105,30 @@
           font-size: 15rem;
           line-height: 104%;
           color: #5447f6;
-          cursor: pointer;
+
           width: 35%;
 
           @include small-screen {
             font-size: 8rem;
             line-height: 104%;
             width: 60%;
-            top: 0%;
-            right: -20%;
+            top: -10%;
+            right: -11%;
           }
 
           .oneInfo {
             display: flex;
             align-items: center;
             margin: 2rem 0;
+            cursor: pointer;
 
             .fire {
               margin-left: 2rem;
               display: none;
+              @include small-screen {
+                height: 3rem;
+                margin-left: -12px;
+              }
             }
           }
 
