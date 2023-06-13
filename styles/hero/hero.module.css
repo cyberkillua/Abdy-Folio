@@ -13,13 +13,13 @@
   }
 }
 .hero .text {
-  width: 60rem;
+  width: 55rem;
   height: 16rem;
   font-weight: 300;
   font-size: 2.4rem;
   line-height: 39px;
   margin-bottom: 15rem;
-  padding: 0rem 3.5rem;
+  padding: 0rem 1rem;
 }
 @media (max-width: 49em) {
   .hero .text {
@@ -27,6 +27,7 @@
     width: 100%;
     line-height: 25px;
     margin-bottom: 20rem;
+    padding: 0rem 3rem;
   }
 }
 .hero .imageContainer {
@@ -135,4 +136,23 @@
 .hero .imageContainer .img .picInfo .info .oneInfo:hover .fire,
 .hero .imageContainer .img .picInfo .info .oneInfo:target .fire {
   display: block;
+}
+.hero .imageContainer .img .picInfo .socials {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 15rem;
+  margin-left: 1rem;
+  top: 50%;
+  left: 0;
+}
+.hero .imageContainer .img .picInfo .socials img {
+  cursor: pointer;
+}
+@media (max-width: 49em) {
+  .hero .imageContainer .img .picInfo .socials {
+    display: none;
+  }
 }/*# sourceMappingURL=hero.module.css.map */

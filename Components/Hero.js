@@ -1,6 +1,9 @@
 import Goat from "../public/GOAT.svg";
 import Cloud from "../public/Cloud.svg";
 import Fire from "../public/fire.svg";
+import Twitter from "../public/twitter.svg";
+import Link from "../public/link.svg";
+import Behance from "../public/behance.svg";
 import Image from "next/image";
 import styles from "../styles/hero/hero.module.css";
 
@@ -33,6 +36,17 @@ const Hero = () => {
               </div>
             </div>
             <Image className={styles.bottomCloud} src={Cloud} alt="Cloud" />
+            <div className={styles.socials}>
+              <div>
+                <Image src={Twitter} alt="twitter" />
+              </div>
+              <div>
+                <Image src={Link} alt="linkedln" />
+              </div>
+              <div>
+                <Image src={Behance} alt="behance" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
