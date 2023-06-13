@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "../styles/navbar/navbar.module.css";
 import Link from "next/link";
-import Image from "next/image";
-import btn from "../public/btn.svg";
 
 const Navbar = () => {
   return (
