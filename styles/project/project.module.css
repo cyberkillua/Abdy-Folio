@@ -1,50 +1,15 @@
 .container {
   margin: 5rem 0;
-  width: 100%;
 }
-
-.contain {
-  color: #eee;
-  font-weight: 600;
-  font-size: 12rem;
-  padding-top: 32px;
-  position: relative;
-  overflow: hidden;
-}
-
-.textTwo {
-  flex-shrink: 0;
-  padding: 0 35px;
-  font-smooth: always;
-  color: #edffa6;
-  font-weight: 300;
-}
-@media (max-width: 49em) {
-  .textTwo {
-    margin: 0 10px;
-  }
-}
-
-.textCon {
-  -webkit-font-smoothing: antialiased;
-  width: -moz-fit-content;
-  width: fit-content;
+.container .projectCon {
   display: flex;
-  flex: auto;
-  flex-direction: row;
+  width: 100%;
+  height: auto;
 }
-
-.text {
-  flex-shrink: 0;
-  padding: 0;
-  font-smooth: always;
+.container .projectCon img {
+  width: 38rem;
+  cursor: pointer;
 }
-.text img {
-  margin: 0 30px;
-}
-@media (max-width: 49em) {
-  .text img {
-    height: 50rem;
-    margin: 0 10px;
-  }
+.container .projectCon .project:hover {
+  background-color: rgb(0, 0, 0);
 }/*# sourceMappingURL=project.module.css.map */
