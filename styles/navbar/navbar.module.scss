@@ -23,5 +23,9 @@
     font-size: 2rem;
     line-height: 184%;
     color: #000000;
+
+    @include small-screen {
+      border: 1.5px solid #000000;
+    }
   }
 }

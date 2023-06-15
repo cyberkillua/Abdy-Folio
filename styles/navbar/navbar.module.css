@@ -23,4 +23,9 @@
   font-size: 2rem;
   line-height: 184%;
   color: #000000;
+}
+@media (max-width: 49em) {
+  .nav .btn {
+    border: 1.5px solid #000000;
+  }
 }/*# sourceMappingURL=navbar.module.css.map */

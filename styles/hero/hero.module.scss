@@ -142,18 +142,25 @@
           position: absolute;
           display: flex;
           align-items: center;
-          justify-content: space-between;
-          height: auto;
-          width: 15rem;
-          margin-left: 1rem;
+          // margin-left: 1rem;
           top: 50%;
           left: 0;
           img {
             cursor: pointer;
+            height: 4rem;
+            margin-right: 2.5rem;
+
+            @include small-screen {
+              height: 5rem;
+              margin-right: 1.5rem;
+            }
           }
 
           @include small-screen {
-            display: none;
+            width: 20rem;
+            top: 70%;
+            left: 57%;
+            margin-left: 0;
           }
         }
       }

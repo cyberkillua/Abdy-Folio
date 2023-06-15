@@ -141,18 +141,25 @@
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: auto;
-  width: 15rem;
-  margin-left: 1rem;
   top: 50%;
   left: 0;
 }
 .hero .imageContainer .img .picInfo .socials img {
   cursor: pointer;
+  height: 4rem;
+  margin-right: 2.5rem;
+}
+@media (max-width: 49em) {
+  .hero .imageContainer .img .picInfo .socials img {
+    height: 5rem;
+    margin-right: 1.5rem;
+  }
 }
 @media (max-width: 49em) {
   .hero .imageContainer .img .picInfo .socials {
-    display: none;
+    width: 20rem;
+    top: 70%;
+    left: 57%;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=hero.module.css.map */
