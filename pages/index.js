@@ -22,6 +22,7 @@ export default function Home() {
           {" "}
           <Hero />
         </div>
+        
         <div className={styles.proj}>
           {" "}
           <Project />
