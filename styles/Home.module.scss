@@ -1,0 +1,23 @@
+@import "mixins";
+
+.container {
+  .heroProj {
+    position: relative;
+
+    .hero {
+      z-index: 1;
+    }
+    .proj {
+      position: absolute;
+      bottom: -32rem;
+      z-index: 9999;
+      opacity: 0.9;
+      @include small-screen {
+        position: relative;
+        bottom: 0;
+
+        opacity: 1;
+      }
+    }
+  }
+}

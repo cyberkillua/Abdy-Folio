@@ -1,24 +1,44 @@
 @import "../mixins";
 .container {
-  margin: 5rem 0;
+  height: 70rem;
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap;
 
   .projectCon {
     display: flex;
     width: 100%;
-    height: auto;
-    // opacity: 0.5;
-    // transition: opacity 0.3s ease;
-    // filter: brightness(50%);
 
     .project {
+      position: relative;
+      display: inline-block;
+
+      img {
+        display: block;
+        width: 38rem;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+
+        @include small-screen {
+          display: none;
+        }
+      }
     }
 
-    img {
-      width: 38rem;
-      cursor: pointer;
-    }
-    .project:hover {
-      background-color: rgba(0, 0, 0, 1);
+    .project:hover .overlay {
+      opacity: 0;
     }
   }
 }

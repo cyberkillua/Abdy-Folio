@@ -37,6 +37,7 @@ export const Project = () => {
           return (
             <div className={styles.project} key={oneProject.alt}>
               <Image src={oneProject.image} alt={oneProject.alt} />
+              <div className={styles.overlay}></div>
             </div>
           );
         })}

@@ -1,0 +1,19 @@
+.container .heroProj {
+  position: relative;
+}
+.container .heroProj .hero {
+  z-index: 1;
+}
+.container .heroProj .proj {
+  position: absolute;
+  bottom: -32rem;
+  z-index: 9999;
+  opacity: 0.9;
+}
+@media (max-width: 49em) {
+  .container .heroProj .proj {
+    position: relative;
+    bottom: 0;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Home.module.css.map */

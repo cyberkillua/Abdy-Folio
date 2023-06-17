@@ -2,14 +2,13 @@
   position: relative;
   margin-top: 5rem;
   padding: 2rem 0rem 2rem 6rem;
-  height: 200vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 @media (max-width: 49em) {
   .hero {
     margin-top: 0rem;
     padding: 1rem 0rem;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
   }
 }
 .hero .text {
@@ -36,7 +35,7 @@
 }
 @media (max-width: 49em) {
   .hero .imageContainer {
-    height: 100vh;
+    height: auto;
   }
 }
 .hero .imageContainer .img {

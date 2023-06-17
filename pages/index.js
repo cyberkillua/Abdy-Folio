@@ -17,8 +17,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Navbar />
-      <Hero />
-      <Project />
+      <div className={styles.heroProj}>
+        <div className={styles.hero}>
+          {" "}
+          <Hero />
+        </div>
+        <div className={styles.proj}>
+          {" "}
+          <Project />
+        </div>
+      </div>
+
       {/* <MovingSection /> */}
 
       {/* <Footer /> */}
