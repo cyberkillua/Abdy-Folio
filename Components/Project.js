@@ -2,10 +2,10 @@ import React from "react";
 import styles from "../styles/project/project.module.css";
 // import { gsap } from "gsap";
 // import { useEffect } from "react";
-import sunday from "../public/Sunday-Ball.webp";
-import cyber from "../public/CyberKillua.webp";
-import aidoo from "../public/Aidoo.webp";
-import generator from "../public/Generator.webp";
+import sunday from "../public/Sunday-Ball.svg";
+import cyber from "../public/CyberKillua.png";
+import aidoo from "../public/Aidoo.svg";
+import generator from "../public/Generator.svg";
 
 import Image from "next/image";
 // import Link from "next/link";
