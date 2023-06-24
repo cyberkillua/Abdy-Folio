@@ -1,6 +1,6 @@
 .container .heroProj {
   position: relative;
-  height: auto;
+  height: 100vh;
 }
 .container .heroProj .hero {
   z-index: 1;
