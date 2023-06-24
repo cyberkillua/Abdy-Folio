@@ -3,9 +3,9 @@ import styles from "../styles/project/project.module.css";
 // import { gsap } from "gsap";
 // import { useEffect } from "react";
 import sunday from "../public/Sunday-Ball.webp";
-import cyber from "../public/CyberKillua.Webp";
-import aidoo from "../public/Aidoo.Webp";
-import generator from "../public/Generator.Webp";
+import cyber from "../public/CyberKillua.webp";
+import aidoo from "../public/Aidoo.webp";
+import generator from "../public/Generator.webp";
 
 import Image from "next/image";
 // import Link from "next/link";
