@@ -17,4 +17,7 @@
     bottom: 7.5rem;
     opacity: 1;
   }
+}
+.container .heroProj .proj:hover {
+  opacity: 1;
 }/*# sourceMappingURL=Home.module.css.map */
