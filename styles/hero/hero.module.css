@@ -53,6 +53,7 @@
   top: 10%;
   right: -50px;
   transform: translateY(-50%);
+  animation: cloudAnimationTop 18s linear infinite;
 }
 @media (max-width: 49em) {
   .hero .imageContainer .img .topCloud {
@@ -65,6 +66,7 @@
   position: absolute;
   top: 30%;
   left: 10%;
+  animation: cloudAnimationBottom 18s linear infinite;
   transform: translateY(-50%);
 }
 @media (max-width: 49em) {
@@ -159,5 +161,28 @@
     top: 70%;
     left: 57%;
     margin-left: 0;
+  }
+}
+
+@keyframes cloudAnimationTop {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-45vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes cloudAnimationBottom {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(35vw);
+  }
+  100% {
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=hero.module.css.map */

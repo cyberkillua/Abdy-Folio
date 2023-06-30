@@ -6,6 +6,7 @@
   padding: 2rem 0rem 2rem 6rem;
   width: 100%;
   overflow-x: hidden;
+
   @include small-screen {
     margin-top: 0rem;
     padding: 1rem 0rem;
@@ -51,6 +52,7 @@
         top: 10%;
         right: -50px;
         transform: translateY(-50%);
+        animation: cloudAnimationTop 18s linear infinite;
 
         @include small-screen {
           height: 10rem;
@@ -63,6 +65,7 @@
         position: absolute;
         top: 30%;
         left: 10%;
+        animation: cloudAnimationBottom 18s linear infinite;
         transform: translateY(-50%);
 
         @include small-screen {
@@ -90,6 +93,7 @@
             object-position: top;
           }
         }
+
         .info {
           position: absolute;
           top: 3%;
@@ -121,6 +125,7 @@
             .fire {
               margin-left: 2rem;
               display: none;
+
               @include small-screen {
                 height: 3rem;
                 margin-left: -12px;
@@ -133,6 +138,7 @@
             display: block;
           }
         }
+
         .socials {
           position: absolute;
           display: flex;
@@ -140,6 +146,7 @@
           // margin-left: 1rem;
           top: 50%;
           left: 0;
+
           img {
             cursor: pointer;
             height: 4rem;
@@ -160,5 +167,34 @@
         }
       }
     }
+  }
+}
+
+
+@keyframes cloudAnimationTop {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-45vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cloudAnimationBottom {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(35vw);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
