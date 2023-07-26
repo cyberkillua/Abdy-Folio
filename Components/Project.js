@@ -3,9 +3,9 @@ import styles from "../styles/project/project.module.css";
 // import { gsap } from "gsap";
 // import { useEffect } from "react";
 import sunday from "../public/Sunday-Ball.svg";
-import cyber from "../public/CyberKillua.png";
-import aidoo from "../public/Aidoo.svg";
-import generator from "../public/Generator.svg";
+// import cyber from "../public/CyberKillua.png";
+// import aidoo from "../public/Aidoo.svg";
+// import generator from "../public/Generator.svg";
 
 import Image from "next/image";
 // import Link from "next/link";
@@ -15,18 +15,18 @@ const project = [
     image: sunday,
     alt: "sunday",
   },
-  {
-    image: cyber,
-    alt: "cyber",
-  },
-  {
-    image: aidoo,
-    alt: "aidoo",
-  },
-  {
-    image: generator,
-    alt: "generator",
-  },
+  // {
+  //   image: cyber,
+  //   alt: "cyber",
+  // },
+  // {
+  //   image: aidoo,
+  //   alt: "aidoo",
+  // },
+  // {
+  //   image: generator,
+  //   alt: "generator",
+  // },
 ];
 
 export const Project = () => {
