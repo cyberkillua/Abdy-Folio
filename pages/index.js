@@ -3,9 +3,7 @@ import Image from "next/image";
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import styles from "../styles/Home.module.css";
-import MovingSection from "../Components/MovingSection";
 import { Project } from "../Components/Project";
-import Footer from "../Components/Footer";
 
 export default function Home() {
   return (
@@ -22,16 +20,12 @@ export default function Home() {
           {" "}
           <Hero />
         </div>
-        
+
         <div className={styles.proj}>
           {" "}
           <Project />
         </div>
       </div>
-
-      {/* <MovingSection /> */}
-
-      {/* <Footer /> */}
     </div>
   );
 }

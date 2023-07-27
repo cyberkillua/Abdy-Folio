@@ -20,6 +20,11 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 49em) {
+  .container .projectCon .project img {
+    width: 85vw;
+  }
+}
 .container .projectCon .project .overlay {
   position: absolute;
   top: 0;
