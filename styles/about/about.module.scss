@@ -1,0 +1,74 @@
+@import "../mixins";
+.container {
+  background-color: var(--secondary-text-color);
+  //   height: 100vh;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 2rem 10rem 2rem 10rem;
+
+  @include small-screen {
+    padding: 5rem 3.5rem;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn {
+      height: 6rem;
+      width: 18rem;
+      background: #ccfd53;
+      border: 3px solid #000000;
+      border-radius: 4rem;
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 184%;
+      color: #000000;
+
+      @include small-screen {
+        border: 1.5px solid #000000;
+      }
+    }
+  }
+  .text {
+    margin: 5rem auto;
+    // padding: 0 10rem;
+    width: 70%;
+    text-align: left;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    .btnTwo {
+      height: 6rem;
+      width: 18rem;
+      background: #ffffff;
+      border: 3px solid #000000;
+      border-radius: 4rem;
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 184%;
+      color: #000000;
+
+      @include small-screen {
+        border: 1.5px solid #000000;
+      }
+    }
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: #000000;
+    img {
+      padding: 0 7px;
+    }
+  }
+}
