@@ -21,9 +21,11 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className={styles.navbar}>
-        <Image src={Alogo} alt="logo" />
+        <Link href="/">
+          <Image src={Alogo} alt="logo" />
+        </Link>
         <Link
-          href="mailto:moshood988@gmail.com"
+          href="mailto:abdymovicxi@gmail.com"
           arget="_blank"
           rel="noopener noreferrer"
         >
@@ -50,11 +52,7 @@ export default function About() {
         managed for all.
       </div>
       <div className={styles.btnContainer}>
-        <Link
-          href="mailto:moshood988@gmail.com"
-          arget="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="" arget="_blank" rel="noopener noreferrer">
           <button className={styles.btnTwo}>View Resume</button>
         </Link>
       </div>

@@ -7,6 +7,11 @@
   width: 100%;
   overflow-x: hidden;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   @include small-screen {
     margin-top: 0rem;
     padding: 1rem 0rem;
@@ -169,7 +174,6 @@
     }
   }
 }
-
 
 @keyframes cloudAnimationTop {
   0% {

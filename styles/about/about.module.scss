@@ -1,11 +1,17 @@
 @import "../mixins";
 .container {
   background-color: var(--secondary-text-color);
-  //   height: 100vh;
+  height: 100%;
+  width: 100vw;
   color: #ffffff;
   font-size: 2rem;
   font-weight: 200;
   padding: 2rem 10rem 2rem 10rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   @include small-screen {
     padding: 5rem 3.5rem;
@@ -14,6 +20,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    img {
+      @include small-screen {
+        height: 5rem;
+      }
+    }
 
     .btn {
       height: 6rem;
@@ -30,6 +41,7 @@
 
       @include small-screen {
         border: 1.5px solid #000000;
+        height: 5rem;
       }
     }
   }

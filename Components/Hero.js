@@ -2,10 +2,11 @@ import Goat from "../public/GOAT.svg";
 import Cloud from "../public/Cloud.svg";
 import Fire from "../public/fire.svg";
 import Twitter from "../public/twitter.svg";
-import Link from "../public/link.svg";
+import Linkedln from "../public/link.svg";
 import Behance from "../public/behance.svg";
 import Image from "next/image";
 import styles from "../styles/hero/hero.module.css";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,7 +24,9 @@ const Hero = () => {
 
             <div className={styles.info}>
               <div className={styles.oneInfo}>
-                <p>About</p>
+                <Link href="/about">
+                  <p>About</p>
+                </Link>
                 <Image className={styles.fire} src={Fire} alt="Fire" />
               </div>
               <div className={styles.oneInfo}>
@@ -41,7 +44,7 @@ const Hero = () => {
                 <Image src={Twitter} alt="twitter" />
               </div>
               <div>
-                <Image src={Link} alt="linkedln" />
+                <Image src={Linkedln} alt="linkedln" />
               </div>
               <div>
                 <Image src={Behance} alt="behance" />
