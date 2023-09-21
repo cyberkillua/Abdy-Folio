@@ -39,6 +39,9 @@
         transition: opacity 0.3s ease;
         bottom: 2.5rem;
         opacity: 0;
+        @include small-screen {
+          opacity: 1;
+        }
         .btn {
           height: 3.5rem;
           width: 11rem;

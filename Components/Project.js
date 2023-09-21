@@ -64,7 +64,6 @@ export const Project = () => {
                 }
               </div>
               <div className={styles.overlay}></div>
-              {console.log(index)}
             </div>
           );
         })}

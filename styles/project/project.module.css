@@ -38,6 +38,11 @@
   bottom: 2.5rem;
   opacity: 0;
 }
+@media (max-width: 49em) {
+  .container .projectCon .project .linkContainer {
+    opacity: 1;
+  }
+}
 .container .projectCon .project .linkContainer .btn {
   height: 3.5rem;
   width: 11rem;
